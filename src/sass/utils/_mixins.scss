@@ -14,3 +14,16 @@
     @content;
   }
 }
+
+@mixin slideAnimation($name, $startX, $startY, $endX, $endY, $startO, $endO) {
+  @keyframes #{$name} {
+    0% {
+      transform: translate(#{$startX}, #{$startY});
+      opacity: #{$startO};
+    }
+    100% {
+      transform: translate(#{$endX}, #{$endY});
+      opacity: #{$endO};
+    }
+  }
+}

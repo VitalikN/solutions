@@ -2,7 +2,6 @@ import Image from "next/image";
 import Link from "next/link";
 
 import styles from "../sass/layouts/header.module.scss";
-// import "../sass/utils/container.module.scss";
 
 import { useState, useEffect } from "react";
 
@@ -22,7 +21,7 @@ const Header = () => {
   }, [menuOpen]);
 
   return (
-    <header>
+    <header className={styles.header}>
       <div className={styles.container}>
         <div className={styles.header__box}>
           <Link href="/">

@@ -1,7 +1,9 @@
 import Head from "next/head";
 import { Inter } from "next/font/google";
-import styles from "@/styles/Home.module.css";
+import styles from "../sass/layouts/home.module.scss";
 import Header from "@/components/Header";
+import Hero from "@/components/Hero";
+import WhyUs from "@/components/WhyUs";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -15,10 +17,9 @@ export default function Home() {
         <link rel="icon" href="/vnv.png" />
       </Head>
       <Header />
-      <main className={`${styles.main} ${inter.className}`}>
-        <section>
-          <h2>Our Solutions</h2>
-        </section>
+      <main className={`${inter.className} ${styles.main}`}>
+        <Hero />
+        <WhyUs />
       </main>
     </>
   );
