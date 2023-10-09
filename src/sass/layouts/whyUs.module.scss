@@ -2,6 +2,7 @@
 @import "../utils/mixins";
 
 @include slideAnimation("slideIn", "0", "100%", "0", "0", "0", "1");
+@include slideAnimation("slideIn", "0", "100%", "0", "0", "0", "1");
 
 .section__whyUs {
   padding: 70px 0;
@@ -24,6 +25,7 @@
     font-size: 1.4em;
   }
 }
+
 .whyUs__list {
   display: flex;
   flex-wrap: wrap;
@@ -47,10 +49,9 @@
   background: #212121c2;
   border-radius: 20px 0;
 
-  // opacity: 0; // Спочатку елемент невидимий
+  opacity: 0;
   transform: translateY(100%);
 }
-@include slideAnimation("slideIn", "0", "100%", "0", "0", "0", "1");
 
 .whyUs__list.animate .whyUs__list__item {
   animation: slideIn 1.2s ease forwards;

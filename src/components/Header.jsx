@@ -4,8 +4,9 @@ import Link from "next/link";
 import styles from "../sass/layouts/header.module.scss";
 
 import { useState, useEffect } from "react";
+import ServicesList from "./ServicesList";
 
-const Header = () => {
+const Header = ({ onServiceSelect, selectedItem }) => {
   const [menuOpen, setMenuOpen] = useState(false);
 
   useEffect(() => {
@@ -19,6 +20,11 @@ const Header = () => {
       document.body.classList.remove("body-no-scroll");
     };
   }, [menuOpen]);
+
+  const handleBurgerMenuServiceSelect = (id) => {
+    setMenuOpen(false);
+    onServiceSelect(id);
+  };
 
   return (
     <header className={styles.header}>
@@ -66,21 +72,13 @@ const Header = () => {
               styles.box__showMenu
             }`}
           >
-            <ul
+            <div
               className={`${
                 menuOpen ? styles.showMenu__list : styles.hideMenu__list
               }`}
             >
-              <li>
-                <Link href="#">Односторiнковий сайт </Link>
-              </li>
-              <li>
-                <Link href="#">Багатосторінковий сайт</Link>
-              </li>
-              <li>
-                <Link href="#">Інтернет магазин</Link>
-              </li>
-            </ul>
+              <ServicesList onServiceSelect={handleBurgerMenuServiceSelect} />
+            </div>
           </div>
         </div>
       </div>

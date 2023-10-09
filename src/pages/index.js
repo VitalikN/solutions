@@ -5,10 +5,18 @@ import Header from "@/components/Header";
 import Hero from "@/components/Hero";
 import WhyUs from "@/components/WhyUs";
 import Services from "@/components/Services";
+import React, { useState } from "react";
+
+import services from "../../services.json";
 
 const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
+  const [selectedItem, setSelectedItem] = useState(services[0].id);
+
+  const handleServiceSelect = (id) => {
+    setSelectedItem(id);
+  };
   return (
     <>
       <Head>
@@ -17,11 +25,18 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/vnv.png" />
       </Head>
-      <Header />
+      <Header
+        onServiceSelect={handleServiceSelect}
+        selectedItem={selectedItem}
+      />
+
       <main className={`${inter.className} ${styles.main}`}>
         <Hero />
         <WhyUs />
-        <Services />
+        <Services
+          onServiceSelect={handleServiceSelect}
+          selectedItem={selectedItem}
+        />
       </main>
     </>
   );
