@@ -1,5 +1,8 @@
 @import "../utils/container.scss";
 @import "../utils/mixins";
+
+@include slideAnimation("slideIn", "0", "100%", "0", "0", "0", "1");
+
 .section__whyUs {
   padding: 70px 0;
   display: flex;
@@ -29,7 +32,9 @@
   max-width: 850px;
   padding: 30px 0;
 }
+
 .whyUs__list__item {
+  // animation: slideIn 1.2s ease forwards;
   flex-grow: 1;
   flex-basis: 200px;
 
@@ -41,6 +46,38 @@
   padding: 15px;
   background: #212121c2;
   border-radius: 20px 0;
+
+  // opacity: 0; // Спочатку елемент невидимий
+  transform: translateY(100%);
+}
+@include slideAnimation("slideIn", "0", "100%", "0", "0", "0", "1");
+
+.whyUs__list.animate .whyUs__list__item {
+  animation: slideIn 1.2s ease forwards;
+
+  &:nth-child(1) {
+    animation-delay: 0.3s;
+  }
+
+  &:nth-child(2) {
+    animation-delay: 0.6s; // 0.2s + 0.2s
+  }
+
+  &:nth-child(3) {
+    animation-delay: 0.9s; // 0.4s + 0.2s
+  }
+
+  &:nth-child(4) {
+    animation-delay: 1.2s;
+  }
+
+  &:nth-child(5) {
+    animation-delay: 1.5s;
+  }
+
+  &:nth-child(6) {
+    animation-delay: 1.8s;
+  }
 }
 .whyUs__list__icon {
   color: #758697;

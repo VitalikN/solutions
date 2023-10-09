@@ -128,12 +128,12 @@
 
   height: 100%;
   width: 100vw;
-  background: #fff;
+  background: #212121;
   z-index: 1;
 
   gap: 20px;
   padding-top: 50px;
-  color: #242424;
+  color: #758697;
   transform: translateY(100%);
 
   transition: transform 1.4s ease 0.9s;
@@ -146,8 +146,8 @@
 
   gap: 20px;
   overflow: auto;
-  background-color: #fff;
-  color: #242424;
+  background: #212121;
+  color: #758697;
   padding-top: 50px;
   height: calc(100% - 95px);
   transform: translateY(95px);

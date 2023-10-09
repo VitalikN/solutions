@@ -5,13 +5,20 @@ import { MdWeb } from "react-icons/md";
 import { FaUsers, FaLaptopCode, FaLightbulb } from "react-icons/fa";
 import { BsCardChecklist, BsGraphUpArrow } from "react-icons/bs";
 
+import useScrollAnimation from "./useScrollAnimation";
+
 const WhyUs = () => {
+  const [listRef, animate] = useScrollAnimation();
+
   return (
     <div className={styles.container}>
       <section className={styles.section__whyUs}>
         <h2 className={styles.whyUs__title}>Ваші IT ідеї в надійних руках</h2>
 
-        <ul className={styles.whyUs__list}>
+        <ul
+          className={`${styles.whyUs__list} ${animate ? styles.animate : ""}`}
+          ref={listRef}
+        >
           <li className={styles.whyUs__list__item}>
             <MdWeb className={styles.whyUs__list__icon} />
             <p className={styles.whyUs__list__text}>

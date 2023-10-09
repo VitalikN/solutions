@@ -4,6 +4,7 @@ import styles from "../sass/layouts/home.module.scss";
 import Header from "@/components/Header";
 import Hero from "@/components/Hero";
 import WhyUs from "@/components/WhyUs";
+import Services from "@/components/Services";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -20,6 +21,7 @@ export default function Home() {
       <main className={`${inter.className} ${styles.main}`}>
         <Hero />
         <WhyUs />
+        <Services />
       </main>
     </>
   );
