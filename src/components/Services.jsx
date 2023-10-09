@@ -12,7 +12,6 @@ const Services = ({ onServiceSelect, selectedItem }) => {
       <section id={`service-${selectedItem}`} className={styles.service}>
         <h2 className={styles.service__title}>Послуги</h2>
         <div className={styles.box__service}>
-          <ServicesList onServiceSelect={onServiceSelect} />
           <ul className={styles.service__list}>
             {servicesList
               .filter(({ id }) => id === selectedItem)
@@ -51,6 +50,7 @@ const Services = ({ onServiceSelect, selectedItem }) => {
                 )
               )}
           </ul>
+          <ServicesList onServiceSelect={onServiceSelect} />
         </div>
       </section>
     </div>
