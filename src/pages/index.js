@@ -40,7 +40,7 @@ export default function Home() {
           selectedItem={selectedItem}
         />
         <Contacts />
-        <Network />
+        {/* <Network /> */}
       </main>
     </>
   );
