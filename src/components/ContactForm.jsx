@@ -1,5 +1,5 @@
 import React from "react";
-import { ErrorMessage, Field, Form, Formik, useFormik } from "formik";
+import { ErrorMessage, Field, Form, Formik } from "formik";
 import * as Yup from "yup";
 
 import styles from "../sass/layouts/contactForm.module.scss";
