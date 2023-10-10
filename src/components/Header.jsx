@@ -53,7 +53,7 @@ const Header = ({ onServiceSelect, selectedItem }) => {
                 <Link href="#">Часті запитання</Link>
               </li>
               <li className={styles.nav__list__item}>
-                <Link href="#">Контакти</Link>
+                <Link href="#contacts">Контакти</Link>
               </li>
             </ul>
           </nav>

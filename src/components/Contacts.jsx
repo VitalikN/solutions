@@ -7,7 +7,7 @@ import { BiLogoTelegram } from "react-icons/bi";
 import { FaWhatsapp, FaViber } from "react-icons/fa";
 const Contacts = () => {
   return (
-    <div className={styles.container}>
+    <div className={styles.container} id="contacts">
       <section className={styles.contacts}>
         <h2 className={styles.contacts__title}>Контакти</h2>
 

@@ -6,6 +6,7 @@ import { FaUsers, FaLaptopCode, FaLightbulb } from "react-icons/fa";
 import { BsCardChecklist, BsGraphUpArrow } from "react-icons/bs";
 
 import useScrollAnimation from "./useScrollAnimation";
+import Link from "next/link";
 
 const WhyUs = () => {
   const [listRef, animate] = useScrollAnimation();
@@ -63,11 +64,13 @@ const WhyUs = () => {
             </p>
           </li>
         </ul>
-        <Button
-          label="Замовити сайт"
-          onClick={() => console.log("Button clicked!")}
-          dataText="Замовити сайт"
-        />
+        <Link href="#contacts">
+          <Button
+            label="Замовити сайт"
+            onClick={() => console.log("Button clicked!")}
+            dataText="Замовити сайт"
+          />
+        </Link>
       </section>
     </div>
   );

@@ -2,6 +2,7 @@ import styles from "../sass/layouts/hero.module.scss";
 
 import React, { useState, useEffect } from "react";
 import Button from "./Button";
+import Link from "next/link";
 
 const Hero = () => {
   const [dynamicHeight, setDynamicHeight] = useState(420);
@@ -38,12 +39,13 @@ const Hero = () => {
         <h1 className={styles.hero__title}>
           Easy, quality, IT - winning solutions for your business
         </h1>
-
-        <Button
-          label="Контакти"
-          onClick={() => console.log("Button clicked!")}
-          dataText="Контакти"
-        />
+        <Link href="#contacts">
+          <Button
+            label="Контакти"
+            onClick={() => console.log("Button clicked!")}
+            dataText="Контакти"
+          />
+        </Link>
       </section>
     </div>
   );
