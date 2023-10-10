@@ -11,7 +11,6 @@ const Hero = () => {
     const handleResize = () => {
       const w = Math.min(window.innerWidth, 1280);
 
-      // Контрольні точки
       const w1 = 768,
         h1 = 420;
       const w2 = 1280,

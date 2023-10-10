@@ -29,7 +29,7 @@ export default function Home() {
       </Head>
       <Header
         onServiceSelect={handleServiceSelect}
-        selectedItem={selectedItem}
+        // selectedItem={selectedItem}
       />
 
       <main className={`${inter.className} ${styles.main}`}>
@@ -39,7 +39,7 @@ export default function Home() {
           onServiceSelect={handleServiceSelect}
           selectedItem={selectedItem}
         />
-        {/* <Contacts /> */}
+        <Contacts />
         {/* <Network /> */}
       </main>
     </>

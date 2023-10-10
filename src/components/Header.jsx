@@ -6,7 +6,7 @@ import styles from "../sass/layouts/header.module.scss";
 import { useState, useEffect } from "react";
 import ServicesList from "./ServicesList";
 
-const Header = ({ onServiceSelect, selectedItem }) => {
+const Header = ({ onServiceSelect }) => {
   const [menuOpen, setMenuOpen] = useState(false);
 
   useEffect(() => {
