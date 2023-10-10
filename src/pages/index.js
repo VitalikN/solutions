@@ -8,6 +8,8 @@ import Services from "@/components/Services";
 import React, { useState } from "react";
 
 import services from "../../services.json";
+import Contacts from "@/components/Contacts";
+import Network from "@/components/Network";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -37,6 +39,8 @@ export default function Home() {
           onServiceSelect={handleServiceSelect}
           selectedItem={selectedItem}
         />
+        <Contacts />
+        <Network />
       </main>
     </>
   );

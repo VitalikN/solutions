@@ -41,7 +41,7 @@ const Services = ({ onServiceSelect, selectedItem }) => {
   };
 
   return (
-    <div className={styles.container} id="service">
+    <div className={styles.container} id="services">
       <section id={`service-${selectedItem}`} className={styles.service}>
         <h2 className={styles.service__title}>Послуги</h2>
         <div className={styles.box__service}>

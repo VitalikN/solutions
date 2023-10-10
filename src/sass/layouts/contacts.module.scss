@@ -1,0 +1,78 @@
+@import "../utils/container.scss";
+@import "../utils/mixins";
+
+.contacts {
+  padding: 70px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+
+.contacts__title {
+  background: linear-gradient(90deg, #758697, #ffffff, #758697);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  transition: color 0.5s;
+  font-family: "Playfair Display", Sans-serif;
+  font-weight: 600;
+  font-size: 1em;
+  line-height: 1.2em;
+  letter-spacing: 0px;
+  text-align: center;
+  @include tablet {
+    font-size: 1.2em;
+  }
+}
+
+.contacts__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+.contacts__list__item {
+  cursor: pointer;
+  position: relative;
+  display: block;
+  height: 60px;
+  width: 60px;
+  line-height: 60px;
+  background: #333;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #666;
+  //   font-size: 3em;
+  border-radius: 50%;
+  transition: 0.5s;
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background: #758697;
+    transform: scale(0.9);
+    z-index: -1;
+  }
+  &:hover::before {
+    transform: scale(1.1);
+    box-shadow: 0 0 20px #758697;
+  }
+  &:hover {
+    color: #758697;
+  }
+}
+//
+.contacts__list__link {
+  display: flex;
+}
+
+.contacts__list__icon {
+  font-size: 40px;
+}

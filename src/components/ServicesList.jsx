@@ -27,13 +27,13 @@ const ServicesList = ({ onServiceSelect }) => {
           key={id}
           onClick={() => onServiceSelect(id)}
         >
-          <span className={styles.servicesList__list__icon}>
-            {iconMap[icon]}
-          </span>
           <Link
             className={`${styles.servicesList__link} `}
             href={`#service-${id}`}
           >
+            <span className={styles.servicesList__list__icon}>
+              {iconMap[icon]}
+            </span>
             <h3 className={styles.servicesList__title}>{title}</h3>
           </Link>
         </li>

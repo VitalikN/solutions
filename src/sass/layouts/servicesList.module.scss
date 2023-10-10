@@ -12,12 +12,9 @@
 
 .servicesList__list__item {
   position: relative;
-  display: flex;
-  align-items: center;
-  padding-left: 10px;
   width: 180px;
   height: 60px;
-  font-size: 10px;
+
   background: #3e3f46;
   @include tablet {
     width: 220px;
@@ -80,6 +77,7 @@
 
 .servicesList__list__item {
   text-decoration: none;
+
   color: #758697;
   letter-spacing: 0.05em;
   transition: 0.5s;
@@ -110,4 +108,10 @@
 .servicesList__list__item:hover .servicesList__list__icon {
   color: #fff;
   background: #758697;
+}
+
+.servicesList__title {
+  cursor: pointer;
+  font-size: 14px;
+  padding: 20px;
 }
