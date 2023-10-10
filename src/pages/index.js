@@ -39,7 +39,7 @@ export default function Home() {
           onServiceSelect={handleServiceSelect}
           selectedItem={selectedItem}
         />
-        <Contacts />
+        {/* <Contacts /> */}
         {/* <Network /> */}
       </main>
     </>
