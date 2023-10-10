@@ -4,16 +4,25 @@
 .servicesList__list {
   position: relative;
   transform: skewY(-15deg);
+  left: 40px;
+  @include tablet {
+    left: 0;
+  }
 }
+
 .servicesList__list__item {
   position: relative;
   display: flex;
   align-items: center;
   padding-left: 10px;
-  width: 220px;
+  width: 180px;
   height: 60px;
-  font-size: 12px;
+  font-size: 10px;
   background: #3e3f46;
+  @include tablet {
+    width: 220px;
+    font-size: 12px;
+  }
   &:nth-child(1) {
     z-index: calc(5);
   }
@@ -50,7 +59,7 @@
     transition: 0.5s;
   }
   &:hover::before {
-    background: #878686;
+    background: #758697;
   }
   &::after {
     content: "";
@@ -65,14 +74,18 @@
     transition: 0.5s;
   }
   &:hover::after {
-    background: #878686;
+    background: #758697;
   }
 }
+
 .servicesList__list__item {
   text-decoration: none;
-  color: aliceblue;
+  color: #758697;
   letter-spacing: 0.05em;
   transition: 0.5s;
+  &:hover {
+    color: #fff;
+  }
   &:last-child::after {
     box-shadow: -120px 120px 20px rgba(0, 0, 0, 0.25);
   }
@@ -92,13 +105,9 @@
   transform: skewY(45deg);
   transition: 0.5s;
   color: #758697;
+  font-size: 20px;
 }
 .servicesList__list__item:hover .servicesList__list__icon {
   color: #fff;
+  background: #758697;
 }
-
-//  background: linear-gradient(90deg, #758697, #ffffff, #758697);
-//   background-clip: text;
-//   -webkit-background-clip: text;
-//   color: transparent;
-//   transition: color 0.5s;
