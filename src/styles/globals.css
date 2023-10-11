@@ -4,6 +4,12 @@
     "Ubuntu Monospace", "Source Code Pro", "Fira Mono", "Droid Sans Mono",
     "Courier New", monospace;
   --dynamic-height: 10vh; /* За замовчуванням висота 10vh */
+  --swiper-pagination-color: #758697;
+  --swiper-pagination-bullet-inactive-color: #fff;
+
+  --swiper-pagination-bullet-width: 12px;
+  --swiper-pagination-bullet-height: 12px;
+  --swiper-pagination-bottom: 0;
 }
 
 * {
