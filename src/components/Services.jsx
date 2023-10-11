@@ -21,8 +21,10 @@ import {
   FaLightbulb,
   FaQuestionCircle,
 } from "react-icons/fa";
+import useScrollAnimation from "./useScrollAnimation";
 
 const Services = ({ onServiceSelect, selectedItem }) => {
+  const [listRef, animate] = useScrollAnimation();
   const iconMap = {
     FaInfo: <FaInfo />,
     FaCubes: <FaCubes />,
@@ -42,9 +44,15 @@ const Services = ({ onServiceSelect, selectedItem }) => {
 
   return (
     <div className={styles.container} id="services">
-      <section id={`service-${selectedItem}`} className={styles.service}>
+      <section
+        id={`service-${selectedItem}`}
+        className={`${styles.service} ${animate ? styles.animate : ""}`}
+        ref={listRef}
+      >
         <h2 className={styles.service__title}>Послуги</h2>
-        <div className={styles.box__service}>
+        <div
+          className={`${styles.box__service} ${animate ? styles.animate : ""}`}
+        >
           <ul className={styles.service__list}>
             {servicesList
               .filter(({ id }) => id === selectedItem)

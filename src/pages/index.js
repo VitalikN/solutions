@@ -8,8 +8,8 @@ import Services from "@/components/Services";
 import React, { useState } from "react";
 
 import services from "../../services.json";
-import Contacts from "@/components/Contacts";
-import Network from "@/components/Network";
+import Footer from "@/components/Footer";
+import Feedback from "@/components/Feedback";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -27,11 +27,7 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/vnv.png" />
       </Head>
-      <Header
-        onServiceSelect={handleServiceSelect}
-        // selectedItem={selectedItem}
-      />
-
+      <Header onServiceSelect={handleServiceSelect} />
       <main className={`${inter.className} ${styles.main}`}>
         <Hero />
         <WhyUs />
@@ -39,9 +35,9 @@ export default function Home() {
           onServiceSelect={handleServiceSelect}
           selectedItem={selectedItem}
         />
-        <Contacts />
-        {/* <Network /> */}
+        <Feedback />
       </main>
+      <Footer />
     </>
   );
 }

@@ -1,2 +1,90 @@
 @import "../utils/container.scss";
 @import "../utils/mixins";
+
+.network {
+  padding: 50px 0;
+}
+.network__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  @include tablet {
+    flex-direction: column;
+  }
+}
+
+.network__list__link {
+  width: 60px;
+  height: 60px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  font-size: 40px;
+  color: #666;
+  border-radius: 50%;
+  outline: 2px solid #333;
+
+  background: #333;
+  transition: outline-offset 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    outline-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.network__list__link:hover {
+  outline-offset: 4px;
+}
+
+.network__list__link:hover .network__list__icon {
+  animation: shake 250ms;
+}
+
+.instagram:hover {
+  background-image: radial-gradient(
+    circle at 30% 107%,
+    #fdf497 0%,
+    #fdf497 5%,
+    #fd5949 45%,
+    #d6249f 60%,
+    #285aeb 90%
+  );
+  outline-color: #ab2d76;
+  color: #fff;
+}
+
+.facebook:hover {
+  background-color: #1da1f2;
+  outline-color: #1da1f2;
+  color: #fff;
+}
+
+.linkedin:hover {
+  background-color: #0077b5;
+  outline-color: #0077b5;
+  color: #fff;
+}
+
+.tiktok:hover {
+  background-color: #000;
+  outline-color: #000;
+  color: #fff;
+}
+.tiktok:hover .icon__tiktok {
+  filter: drop-shadow(2px 1px 1px red);
+}
+
+@keyframes shake {
+  10% {
+    transform: rotate(15deg);
+  }
+  20% {
+    transform: rotate(-15deg);
+  }
+  30% {
+    transform: rotate(15deg);
+  }
+  40% {
+    transform: rotate(-15deg);
+  }
+}

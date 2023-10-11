@@ -27,67 +27,72 @@ const ContactForm = () => {
   };
 
   return (
-    <Formik
-      initialValues={{ name: "", email: "", message: "" }}
-      onSubmit={(values, { resetForm }) => {
-        alert(JSON.stringify(values, null, 2));
-        resetForm();
-      }}
-      validationSchema={validationSchema}
-    >
-      {({ errors, touched }) => (
-        <Form className={styles.form}>
-          <div className={styles.form__box}>
-            <label className={styles.label} htmlFor="name">
-              Ім`я:
-            </label>
+    <div className={styles.contacts__container__form}>
+      <h2 className={styles.contacts__title}>
+        Маєте ідею? Розкажіть нам про неї
+      </h2>
+      <Formik
+        initialValues={{ name: "", email: "", message: "" }}
+        onSubmit={(values, { resetForm }) => {
+          alert(JSON.stringify(values, null, 2));
+          resetForm();
+        }}
+        validationSchema={validationSchema}
+      >
+        {({ errors, touched }) => (
+          <Form className={styles.form}>
+            <div className={styles.form__box}>
+              <label className={styles.label} htmlFor="name">
+                Ім`я:
+              </label>
 
-            <Field
-              className={styles.input}
-              type="text"
-              name="name"
-              error={touched.name && errors.name}
+              <Field
+                className={styles.input}
+                type="text"
+                name="name"
+                error={touched.name && errors.name}
+              />
+              <ErrorFeedback name="name" />
+            </div>
+            <div className={styles.form__box}>
+              <label className={styles.label} htmlFor="email">
+                email:
+              </label>
+
+              <Field
+                className={styles.input}
+                type="email"
+                name="email"
+                error={touched.email && errors.email}
+              />
+
+              <ErrorFeedback name="email" />
+            </div>
+            <div className={styles.form__box}>
+              <label className={styles.label} htmlFor="text">
+                Повідомлення:
+              </label>
+
+              <Field
+                className={styles.input}
+                as="textarea"
+                name="message"
+                error={touched.message && errors.message}
+              />
+
+              <ErrorFeedback name="message" />
+            </div>
+
+            <Button
+              label="Надіслати"
+              type="submit"
+              onClick={() => console.log("Button clicked!")}
+              dataText="Надіслати"
             />
-            <ErrorFeedback name="name" />
-          </div>
-          <div className={styles.form__box}>
-            <label className={styles.label} htmlFor="email">
-              email:
-            </label>
-
-            <Field
-              className={styles.input}
-              type="email"
-              name="email"
-              error={touched.email && errors.email}
-            />
-
-            <ErrorFeedback name="email" />
-          </div>
-          <div className={styles.form__box}>
-            <label className={styles.label} htmlFor="text">
-              Повідомлення:
-            </label>
-
-            <Field
-              className={styles.input}
-              as="textarea"
-              name="message"
-              error={touched.message && errors.message}
-            />
-
-            <ErrorFeedback name="message" />
-          </div>
-
-          <Button
-            label="Надіслати"
-            type="submit"
-            onClick={() => console.log("Button clicked!")}
-            dataText="Надіслати"
-          />
-        </Form>
-      )}
-    </Formik>
+          </Form>
+        )}
+      </Formik>
+    </div>
   );
 };
 

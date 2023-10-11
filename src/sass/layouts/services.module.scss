@@ -1,6 +1,8 @@
 @import "../utils/container.scss";
 @import "../utils/mixins";
 
+@include slideAnimation("slideIn", "0", "100%", "0", "0", "0", "1");
+
 .service {
   padding: 70px 0;
   display: flex;
@@ -31,7 +33,7 @@
     flex-direction: column-reverse;
     align-items: center;
     gap: 100px;
-
+    opacity: 0;
     padding: 100px 20px 0 20px;
   }
   @include tablet {
@@ -42,6 +44,9 @@
     width: 100%;
     gap: 0;
   }
+}
+.box__service.animate {
+  animation: slideIn 1.2s ease forwards;
 }
 .service__list {
   transition: 0.5s;
