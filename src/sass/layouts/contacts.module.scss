@@ -9,6 +9,10 @@
   background: #212121c2;
   border-radius: 50px 0;
 }
+@include slideAnimation("slideIn", "0", "100%", "0", "0", "0", "1");
+.contacts.animate .contacts__container {
+  animation: slideIn 1.2s ease forwards;
+}
 
 .contacts__title {
   background: linear-gradient(90deg, #758697, #ffffff, #758697);
@@ -36,6 +40,7 @@
     align-items: flex-end;
     gap: 100px;
   }
+  opacity: 0;
 }
 .contacts__list {
   display: flex;

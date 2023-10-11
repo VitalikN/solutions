@@ -1,0 +1,42 @@
+@import "../utils/container.scss";
+@import "../utils/mixins";
+
+.project {
+  padding-bottom: 50px;
+}
+
+.project__img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 50px 0;
+}
+.project__title {
+  background: linear-gradient(90deg, #758697, #ffffff, #758697);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  transition: color 0.5s;
+  font-family: "Playfair Display", Sans-serif;
+  font-weight: 600;
+  font-size: 1.1em;
+  line-height: 1.2em;
+  letter-spacing: 0px;
+  padding-top: 15px;
+  @include tablet {
+    font-size: 1.2em;
+  }
+}
+.project__text {
+  font-size: 15px;
+  text-decoration: none;
+  line-height: 16px;
+
+  font-weight: 400;
+  background: linear-gradient(90deg, #758697, #ffffff, #758697);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  transition: color 0.5s;
+  padding: 20px;
+  margin-bottom: 20px;
+}

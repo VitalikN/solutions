@@ -3,7 +3,7 @@ import ContactContainer from "./ContactContainer";
 const Footer = () => {
   return (
     <footer>
-      <ContactContainer />
+      <ContactContainer />;
     </footer>
   );
 };

@@ -10,6 +10,7 @@ import React, { useState } from "react";
 import services from "../../services.json";
 import Footer from "@/components/Footer";
 import Feedback from "@/components/Feedback";
+import Projects from "@/components/Projects";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -31,6 +32,8 @@ export default function Home() {
       <main className={`${inter.className} ${styles.main}`}>
         <Hero />
         <WhyUs />
+        <Projects />
+
         <Services
           onServiceSelect={handleServiceSelect}
           selectedItem={selectedItem}
