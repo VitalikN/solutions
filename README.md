@@ -1,40 +1,50 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# VNV.Solutions Лендінгова сторінка
 
-## Getting Started
+VNV.Solutions — це компанія, яка спеціалізується на створенні веб-сайтів. Ми пропонуємо послуги створення різних типів сайтів: від односторінкових до багатосторінкових веб-сайтів та інтернет-магазинів.
 
-First, run the development server:
+## Застосовані технології
+
+- [**formik**](https://formik.org/docs/overview) - Управління та валідація форм у React-додатках.
+- [**next**](https://nextjs.org/docs) - Створення сервер-рендерених React-додатків.
+- [**react** та **react-dom**](https://reactjs.org/docs/getting-started.html) - Створення інтерфейсів користувача.
+- [**react-icons**](https://react-icons.github.io/react-icons/) - Іконки для React-компонентів.
+- [**react-intersection-observer**](https://www.npmjs.com/package/react-intersection-observer) - Відстеження видимості елементів.
+- [**sass**](https://sass-lang.com/documentation) - Розширені стилі та теми для CSS.
+- [**swiper**](https://swiperjs.com/get-started) - Динамічні слайдери та каруселі.
+- [**yup**](https://github.com/jquense/yup) - Валідація даних у формах.
+
+## Як розпочати роботу
+
+Для початку роботи з проектом:
 
 ```bash
 npm run dev
-# or
+# або
 yarn dev
-# or
+# або
 pnpm dev
-# or
+# або
 bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Відкрийте http://localhost:3000 у вашому браузері, щоб побачити результат.
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+Ви можете почати редагування сторінки, змінюючи pages/index.js. Сторінка автоматично оновлюється під час редагування файлу.
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+API маршрути доступні на http://localhost:3000/api/hello. Цю кінцеву точку можна редагувати в pages/api/hello.js.
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+Директорія pages/api співставляється з /api/\*. Файли в цій директорії розглядаються як API маршрути, а не як сторінки React.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+Цей проект використовує next/font для автоматичної оптимізації та завантаження Inter - користувацького шрифта Google.
 
-## Learn More
+Дізнатись більше
+Щоб дізнатися більше про Next.js, ознайомтеся з наступними ресурсами:
 
-To learn more about Next.js, take a look at the following resources:
+Документація Next.js - дізнайтеся про особливості та API Next.js.
+Вивчення Next.js - інтерактивний підручник за Next.js.
+Ви можете перевірити репозиторій Next.js на GitHub - будемо раді вашим відгукам та внескам!
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Розгортання на Vercel
+Найпростіший спосіб розгортання вашого додатка Next.js - використовувати Платформу Vercel від розробників Next.js.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Ознайомтеся з нашою документацією по розгортанню Next.js для отримання додаткової інформації.
