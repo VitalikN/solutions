@@ -3,14 +3,10 @@
 
 .hero__btn {
   position: relative;
-  color: transparent;
+  color: #b5b6b7;
   padding: 10px;
   background: linear-gradient(90deg, #565859, #878686, #565859);
   border-radius: 5px;
-
-  display: flex;
-  align-items: center;
-  justify-content: center;
 
   border: none;
   font-size: 15px;
@@ -35,7 +31,7 @@
     background: linear-gradient(90deg, #758697, #ffffff, #758697);
     background-clip: text;
     -webkit-background-clip: text;
-    color: transparent;
+
     transition: color 0.5s;
     z-index: 1;
   }

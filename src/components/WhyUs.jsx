@@ -64,12 +64,8 @@ const WhyUs = () => {
             </p>
           </li>
         </ul>
-        <Link href="#contacts">
-          <Button
-            label="Замовити сайт"
-            onClick={() => console.log("Button clicked!")}
-            dataText="Замовити сайт"
-          />
+        <Link href="#contacts" className={styles.hero__btn}>
+          Замовити сайт
         </Link>
       </section>
     </div>

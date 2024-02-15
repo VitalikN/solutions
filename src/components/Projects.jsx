@@ -31,16 +31,16 @@ const Projects = () => {
       let calculatedWidth, calculatedHeight;
 
       if (w <= w0) {
-        calculatedWidth = 290; // для мобільних
+        calculatedWidth = 290;
         calculatedHeight = h0;
       } else if (w <= w1) {
-        calculatedWidth = w; // лінійне масштабування між w0 і w1
+        calculatedWidth = w;
         calculatedHeight = h0 + ((w - w0) * (h1 - h0)) / (w1 - w0);
       } else if (w <= w2) {
-        calculatedWidth = w; // лінійне масштабування між w1 і w2
+        calculatedWidth = w;
         calculatedHeight = h1 + ((w - w1) * (h2 - h1)) / (w2 - w1);
       } else {
-        calculatedWidth = w2; // максимальний розмір
+        calculatedWidth = w2;
         calculatedHeight = h2;
       }
 

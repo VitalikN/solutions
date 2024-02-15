@@ -38,12 +38,8 @@ const Hero = () => {
         <h1 className={styles.hero__title}>
           Easy, quality, IT - winning solutions for your business
         </h1>
-        <Link href="#contacts">
-          <Button
-            label="Контакти"
-            onClick={() => console.log("Button clicked!")}
-            dataText="Контакти"
-          />
+        <Link href="#contacts" className={styles.hero__btn}>
+          Контакти
         </Link>
       </section>
     </div>
