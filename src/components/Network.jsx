@@ -8,7 +8,7 @@ const Network = () => {
     <ul className={styles.network__list}>
       <li>
         <Link
-          href="https://www.instagram.com/l.l.vinni/"
+          href="https://github.com/VitalikN/"
           className={`${styles.network__list__link} ${styles.instagram}`}
           target="_blank"
         >
@@ -17,7 +17,7 @@ const Network = () => {
       </li>
       <li>
         <Link
-          href="https://www.facebook.com/people/VNV-Solutions"
+          href="https://github.com/VitalikN/"
           className={`${styles.network__list__link} ${styles.facebook}`}
           target="_blank"
         >
@@ -26,7 +26,7 @@ const Network = () => {
       </li>
       <li>
         <Link
-          href="https://www.tiktok.com/@vnvsolutions"
+          href="https://www.tiktok.com/@vitaliknozhenko"
           className={`${styles.network__list__link} ${styles.tiktok}`}
           target="_blank"
         >
@@ -37,7 +37,7 @@ const Network = () => {
       </li>
       <li>
         <Link
-          href="https://www.linkedin.com/company/vnv-tech/"
+          href="https://www.linkedin.com/in/vitalii-nozhenko/"
           className={`${styles.network__list__link} ${styles.linkedin}`}
           target="_blank"
         >
