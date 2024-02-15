@@ -57,7 +57,7 @@ const Header = ({ onServiceSelect }) => {
               </li>
             </ul>
           </nav>
-          <button
+          <div
             className={`${styles.burger__button} ${
               menuOpen ? styles.spin : ""
             }`}
@@ -66,7 +66,7 @@ const Header = ({ onServiceSelect }) => {
             <div className={styles.line}></div>
             <div className={styles.line}></div>
             <div className={styles.line}></div>
-          </button>
+          </div>
           <div
             //
             className={`${menuOpen ? styles.showMenu : ""} ${

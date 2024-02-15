@@ -81,21 +81,21 @@ const Services = ({ onServiceSelect, selectedItem }) => {
                       <ul className={styles.service__listText}>
                         <li className={styles.service__listText__item}>
                           <span className={styles.service__list__icon}>
-                            {" "}
+                           
                             {iconMap[icon1]}
                           </span>
                           <p className={styles.service__list__text}>{item1}</p>
                         </li>
                         <li className={styles.service__listText__item}>
                           <span className={styles.service__list__icon}>
-                            {" "}
+                           
                             {iconMap[icon2]}
                           </span>
                           <p className={styles.service__list__text}>{item2}</p>
                         </li>
                         <li className={styles.service__listText__item}>
                           <span className={styles.service__list__icon}>
-                            {" "}
+                           
                             {iconMap[icon3]}
                           </span>
                           <p className={styles.service__list__text}>{item3}</p>

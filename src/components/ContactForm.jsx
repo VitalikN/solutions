@@ -50,6 +50,7 @@ const ContactForm = () => {
                 className={styles.input}
                 type="text"
                 name="name"
+                id="name"
                 error={touched.name && errors.name}
               />
               <ErrorFeedback name="name" />
@@ -63,13 +64,14 @@ const ContactForm = () => {
                 className={styles.input}
                 type="email"
                 name="email"
+                id="email"
                 error={touched.email && errors.email}
               />
 
               <ErrorFeedback name="email" />
             </div>
             <div className={styles.form__box}>
-              <label className={styles.label} htmlFor="text">
+              <label className={styles.label} htmlFor="message">
                 Повідомлення:
               </label>
 
@@ -77,6 +79,7 @@ const ContactForm = () => {
                 className={styles.input}
                 as="textarea"
                 name="message"
+                id="message"
                 error={touched.message && errors.message}
               />
 
@@ -97,3 +100,4 @@ const ContactForm = () => {
 };
 
 export default ContactForm;
+//
