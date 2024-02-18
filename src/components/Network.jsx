@@ -8,7 +8,7 @@ const Network = () => {
     <ul className={styles.network__list}>
       <li>
         <Link
-          href="https://github.com/VitalikN/"
+          href="https://github.com/VitalikN"
           className={`${styles.network__list__link} ${styles.instagram}`}
           target="_blank"
         >
@@ -17,7 +17,7 @@ const Network = () => {
       </li>
       <li>
         <Link
-          href="https://github.com/VitalikN/"
+          href="https://github.com/VitalikN"
           className={`${styles.network__list__link} ${styles.facebook}`}
           target="_blank"
         >
@@ -37,7 +37,7 @@ const Network = () => {
       </li>
       <li>
         <Link
-          href="https://www.linkedin.com/in/vitalii-nozhenko/"
+          href="https://www.linkedin.com/in/vitalii-nozhenko"
           className={`${styles.network__list__link} ${styles.linkedin}`}
           target="_blank"
         >

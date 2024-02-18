@@ -11,7 +11,7 @@ const Contacts = () => {
         <Link
           className={styles.contacts__list__link}
           // href="mailto:team@vnv.solutions"
-          href=" https://t.me/Vitalik202020"
+          href="https://t.me/Vitalik202020"
         >
           <AiOutlineMail className={styles.contacts__list__icon} />
         </Link>
@@ -19,7 +19,7 @@ const Contacts = () => {
       <li className={styles.contacts__list__item}>
         <Link
           className={styles.contacts__list__link}
-          href=" https://t.me/Vitalik202020"
+          href="https://t.me/Vitalik202020"
           target="_blank"
           rel="noopener noreferrer"
         >
@@ -29,7 +29,7 @@ const Contacts = () => {
       <li className={styles.contacts__list__item}>
         <Link
           className={styles.contacts__list__link}
-          href=" https://t.me/Vitalik202020"
+          href="https://t.me/Vitalik202020"
           target="_blank"
           rel="noopener noreferrer"
         >
