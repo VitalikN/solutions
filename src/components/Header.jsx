@@ -1,10 +1,9 @@
+import { useState, useEffect } from "react";
 import Image from "next/image";
 import Link from "next/link";
 
-import styles from "../sass/layouts/header.module.scss";
-
-import { useState, useEffect } from "react";
 import ServicesList from "./ServicesList";
+import styles from "../sass/layouts/header.module.scss";
 
 const Header = ({ onServiceSelect }) => {
   const [menuOpen, setMenuOpen] = useState(false);

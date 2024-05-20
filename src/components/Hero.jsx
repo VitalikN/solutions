@@ -1,7 +1,6 @@
-import styles from "../sass/layouts/hero.module.scss";
-
 import React, { useState, useEffect } from "react";
 import Link from "next/link";
+import styles from "../sass/layouts/hero.module.scss";
 
 const Hero = () => {
   const [dynamicHeight, setDynamicHeight] = useState(420);

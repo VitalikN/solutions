@@ -29,7 +29,7 @@ export default function Home() {
         <link rel="icon" href="/vnv.png" />
       </Head>
       <Header onServiceSelect={handleServiceSelect} />
-      <main className={`${inter.className} ${styles.main}`}>
+      <main className={`${inter} ${styles.main}`}>
         <Hero />
         <WhyUs />
         <Projects />

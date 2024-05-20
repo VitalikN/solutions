@@ -4,6 +4,8 @@ import * as Yup from "yup";
 
 import styles from "../sass/layouts/contactForm.module.scss";
 import Button from "./Button";
+import { toast } from "react-toastify";
+import Toastify from "./Toastify";
 
 const validationSchema = Yup.object({
   name: Yup.string()
@@ -25,18 +27,29 @@ const ContactForm = () => {
       </ErrorMessage>
     );
   };
+  const handleSubmit = (values, { resetForm }) => {
+    toast.success(" Повідомлення надіслано!", {
+      position: "top-right",
+      autoClose: 5000,
+      hideProgressBar: false,
+      closeOnClick: true,
+      pauseOnHover: true,
+      draggable: true,
+      progress: undefined,
+      theme: "light",
+    });
+    resetForm();
+  };
 
   return (
     <div className={styles.contacts__container__form}>
       <h2 className={styles.contacts__title}>
         Маєте ідею? Розкажіть нам про неї
       </h2>
+      <Toastify />
       <Formik
         initialValues={{ name: "", email: "", message: "" }}
-        onSubmit={(values, { resetForm }) => {
-          alert(JSON.stringify(values, null, 2));
-          resetForm();
-        }}
+        onSubmit={handleSubmit}
         validationSchema={validationSchema}
       >
         {({ errors, touched }) => (
@@ -89,8 +102,7 @@ const ContactForm = () => {
             <Button
               label="Надіслати"
               type="submit"
-              onClick={() => console.log("Button clicked!")}
-              dataText="Надіслати"
+              // onClick={() => console.log("Button clicked!")}
             />
           </Form>
         )}

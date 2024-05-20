@@ -1,5 +1,4 @@
 import styles from "../sass/layouts/whyUs.module.scss";
-import Button from "./Button";
 import { MdWeb } from "react-icons/md";
 
 import { FaUsers, FaLaptopCode, FaLightbulb } from "react-icons/fa";
