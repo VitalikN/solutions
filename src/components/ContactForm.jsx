@@ -5,7 +5,7 @@ import * as Yup from "yup";
 import styles from "../sass/layouts/contactForm.module.scss";
 import Button from "./Button";
 import { toast } from "react-toastify";
-import Toastify from "./Toastify";
+// import Toastify from "./Toastify";
 
 const validationSchema = Yup.object({
   name: Yup.string()
@@ -46,7 +46,7 @@ const ContactForm = () => {
       <h2 className={styles.contacts__title}>
         Маєте ідею? Розкажіть нам про неї
       </h2>
-      <Toastify />
+
       <Formik
         initialValues={{ name: "", email: "", message: "" }}
         onSubmit={handleSubmit}
