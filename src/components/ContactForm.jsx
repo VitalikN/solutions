@@ -5,7 +5,6 @@ import * as Yup from "yup";
 import styles from "../sass/layouts/contactForm.module.scss";
 import Button from "./Button";
 import { toast } from "react-toastify";
-// import Toastify from "./Toastify";
 
 const validationSchema = Yup.object({
   name: Yup.string()
@@ -99,11 +98,7 @@ const ContactForm = () => {
               <ErrorFeedback name="message" />
             </div>
 
-            <Button
-              label="Надіслати"
-              type="submit"
-              // onClick={() => console.log("Button clicked!")}
-            />
+            <Button label="Надіслати" type="submit" />
           </Form>
         )}
       </Formik>
@@ -112,4 +107,3 @@ const ContactForm = () => {
 };
 
 export default ContactForm;
-//
